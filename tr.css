@@ -1,0 +1,456 @@
+/* Styles de base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #333;
+}
+
+/* En-tête */
+.header {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffdd59;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Projets */
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formulaire de contact */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #03cde7;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #f0600d;
+}
+
+/* Pied de page */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Section d'introduction */
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteneur de la photo */
+.photo-container {
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo-container:hover {
+    transform: scale(1.1); /* Légère augmentation de la taille au survol */
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour que l'image occupe tout le conteneur */
+    border-radius: 50%;
+}
+
+/* Texte (nom et filière) */
+.text-container {
+    font-family: 'Arial', sans-serif;
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.filiere {
+    font-size: 1.2rem;
+    color: #2575fc;
+    font-weight: 500;
+}
+
+/* Animation sur le nom au survol */
+.name:hover {
+    color: #ffdd59;
+    transform: scale(1.1);
+}
+
+/* Animation de texte pour la filière */
+.filiere {
+    transition: color 0.3s ease;
+}
+
+.filiere:hover {
+    color: #6a11cb;
+}
+
+/* Section des compétences */
+.skills-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 30px;
+}
+
+/* Chaque compétence */
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+/* Conteneur de la barre de progression */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Barres de progression */
+.progress-bar {
+    height: 100%;
+    transition: width 2s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Couleurs spécifiques pour chaque compétence */
+.html {
+    background-color: #f16529;
+}
+
+.js {
+    background-color: #f0db4f;
+}
+
+.php {
+    background-color: #6200ca;
+}
+
+.ps {
+    background-color: #18f57c;
+}
+.python {
+    background-color: #f19204; /* Couleur de Python */
+}
+
+.c {
+    background-color: #7ec40d; /* Couleur du langage C */
+}
+.canva {
+    background-color: #0cacb8;
+}
+
+/* Texte des compétences */
+.skill p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Animation de texte au survol */
+.skill p:hover {
+    color: #2575fc;
+}
+
+/* Animation des barres de progression */
+.progress-bar-container {
+    transition: all 0.5s ease;
+}
+/* Section des stages */
+#internships {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.internships-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.internship {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image de l'entreprise */
+.internship-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.internship-img:hover {
+    opacity: 0.8;
+}
+
+/* Informations de l'entreprise */
+.internship-info {
+    padding: 20px;
+}
+
+.internship-info h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.internship-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.internship-info p strong {
+    font-weight: bold;
+}
+
+/* Animation au survol */
+.internship:hover .internship-info {
+    transform: translateY(-10px);
+}
+/* Section des projets */
+#projects {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation au survol */
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image des projets */
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover .project-img {
+    opacity: 0.8;
+}
+
+/* Contenu des projets (titre, description, bouton) */
+.project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-content h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-content .btn {
+    font-size: 1rem;
+    color: white;
+    background-color: #2575fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-content .btn:hover {
+    background-color: #1e64c8;
+}
+/* Style du bouton "En savoir plus" */
+.btn {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #e9760b;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #f5500f;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation de l'effet de survol avec la pseudo-classe ::before */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: #0eb7ce;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Effet de focus sur le bouton */
+.btn:focus {
+    outline: none;
+    border: 2px solid #b3d107;
+    box-shadow: 0 0 5px #ffffff;
+}
